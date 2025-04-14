@@ -10,9 +10,7 @@ public abstract class AbstractTransactionInteractions {
     public static AbstractTransactionInteractions getStrategy(MenuState state) {
         try {
             String className = state.name().charAt(0) + state.name().substring(1).toLowerCase();  // ADD_INCOME -> Add_income
-            System.out.println(className);
             String fullClassName = "Strategies." + className;
-            System.out.println(fullClassName);
             Class<?> strategy = Class.forName(fullClassName);
             return (AbstractTransactionInteractions) strategy.getDeclaredConstructor().newInstance();
         } catch (Exception e) {

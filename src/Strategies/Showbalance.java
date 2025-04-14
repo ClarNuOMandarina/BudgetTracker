@@ -14,7 +14,7 @@ public class Showbalance extends AbstractTransactionInteractions{
             balance += transaction.getAmount();
         }
 
-        System.out.println("Current balance: " + balance);
+        System.out.println("Current balance: $" + balance);
         return transactions;
     }
 }

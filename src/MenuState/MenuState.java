@@ -4,7 +4,7 @@ public enum MenuState {
     CHOOSING(-1),
     EXIT(0),
     ADDINCOME(1),
-    ADDEXPENSE(2),
+    ADDEXPENSES(2),
     SHOWTRANSACTIONS(3),
     SHOWBALANCE(4);
 
